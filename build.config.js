@@ -12,12 +12,6 @@ module.exports = {
     less: 'src/less/main.less'
   },
 
-  test_files: {
-    js: [
-      'bower/angular-mocks/angular-mocks.js'
-    ]
-  },
-
   vendor_files: {
     js: [
       'bower/angular/angular.js',
