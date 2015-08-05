@@ -3,10 +3,9 @@ module.exports = {
   compile_dir: 'release',
 
   app_files: {
-    js: [ 'src/**/*.js' '!src/assets/**/*.js' ],
-    coffee: [ 'src/**/*.coffee' ],
+    js: [ 'src/js/**/*.js' ],
 
-    atpl: [ 'src/app/**/*.tpl.html' ],
+    atpl: [ 'src/templates/**/*.tpl.html' ],
 
     html: [ 'src/index.html' ],
     less: 'src/less/main.less'
@@ -16,7 +15,8 @@ module.exports = {
     js: [
       'bower/angular/angular.js',
       'bower/angular-ui-router/release/angular-ui-router.js',
-      'bower/angular-ui-utils/modules/route/route.js'
+      'bower/angular-animate/angular-animate.js',
+      'src/assets/libs/parse-1.5.0.min.js'
     ],
     css: [
     ],

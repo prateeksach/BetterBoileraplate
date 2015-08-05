@@ -1,4 +1,4 @@
-# BetterBP
+# BetterBP (AngularJS x Facebook Parse)
 
 Yes, you read it right. It's BetterBoilerplate. Basically, very empty boilerplate right now.
 Meant to be used for AngularJS x Facebook Parse projects. Everything will be documented
