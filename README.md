@@ -13,14 +13,14 @@ Originally forked from [ngBoilerplate](https://github.com/ngbp/ngbp).
 Install Node.js and then:
 
 ```sh
-$ git clone git://github.com/joshdmiller/ng-boilerplate
-$ cd ng-boilerplate
-$ sudo npm -g install grunt-cli karma bower
+$ git clone https://github.com/prateeksach/BetterBoilerplate
+$ cd BetterBoilerplate
+$ sudo npm -g install grunt-cli bower
 $ npm install
 $ bower install
 $ grunt watch
 ```
 
-Finally, open `file:///path/to/ng-boilerplate/build/index.html` in your browser.
+Finally, open `file:///path/to/BetterBoilerplate/build/index.html` in your browser.
 
 Happy hacking!
