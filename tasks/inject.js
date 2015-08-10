@@ -1,9 +1,6 @@
-
-
 var mainBowerFiles = require('main-bower-files');
 
 module.exports  = function (gulp, config, $, isProd) {
-
     gulp.task('inject', ['templatecache', 'less'], function () {
         var bowerFiles, appFiles, appCssFiles, dest;
         var env = isProd ? config.env.prod : config.env.dev;
@@ -24,5 +21,4 @@ module.exports  = function (gulp, config, $, isProd) {
             .pipe($.rename({basename: 'index'}))
             .pipe(gulp.dest(dest));
     });
-
 };

@@ -1,8 +1,4 @@
-
-
-
 module.exports = function (gulp, config, $, isProd, browserSync) {
-
     gulp.task('serve', ['templatecache', 'inject', 'less'], function () {
         browserSync.init({
             server: {
@@ -13,6 +9,4 @@ module.exports = function (gulp, config, $, isProd, browserSync) {
             index: config.server.index
         });
     });
-
-
 };

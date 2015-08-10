@@ -1,0 +1,11 @@
+// Import 3rd-party libraries
+@import '../vendor/angular-material/angular-material.scss';
+
+// Import foundation files
+@import 'foundation/variables';
+@import 'foundation/animations';
+
+// Import each page's less file
+@import 'home';
+
+// Import partials

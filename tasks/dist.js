@@ -1,8 +1,6 @@
-
 var mainBowerFiles = require('main-bower-files');
 
 module.exports = function (gulp, config, $, isProd) {
-
     var env = isProd ? config.env.prod : config.env.dev;
 
     // put all vendor files into 1 files

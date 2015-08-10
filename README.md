@@ -15,7 +15,7 @@ Install Node.js and then:
 ```sh
 $ git clone https://github.com/prateeksach/BetterBoilerplate
 $ cd BetterBoilerplate
-$ sudo npm -g install grunt-cli bower
+$ sudo npm -g install gulp bower
 $ npm install
 $ bower install
 ```

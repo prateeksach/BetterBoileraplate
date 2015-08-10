@@ -1,5 +1,4 @@
 module.exports = {
-
     env: {
         dev  : 'dev',
         prod : 'prod'
@@ -16,26 +15,27 @@ module.exports = {
         css   : 'src/css/'
     },
     files: {
-        less      : 'src/less/main.less',
-        watchLess : 'src/less/**/*.less',
+        watchSass : 'src/scss/**/*.scss',
         templates : 'src/templates/**/*.tpl.html',
-        index     : 'src/index.html',
+        assets    : 'src/assets/**/*',
         js        : 'src/js/**/*.js',
+
         css       : 'main.css',
-        assets    : 'src/assets/**/*'
+        index     : 'src/index.html',
+        sass      : 'src/scss/main.scss'
     },
     dist: {
         dirs: {
             root       : 'build/',
-            css        : 'build/css/',
             js         : 'build/js/',
+            css        : 'build/css/',
             assets     : 'build/assets/'
         },
         files: {
-            index      : 'build/index.html',
+            css        : 'main.css',
             js         : 'app.min.js',
             vendor     : 'vendor.min.js',
-            css        : 'main.css'
+            index      : 'build/index.html'
         }
     },
     templateCache: {
@@ -52,5 +52,4 @@ module.exports = {
         host: 'localhost',
         index: 'index.html'
     }
-
 };
