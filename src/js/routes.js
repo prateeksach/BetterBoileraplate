@@ -1,6 +1,5 @@
 angular.module( 'betterBP.routes', [
   'ui.router',
-  'templates-app'
 ])
 
 .config( function myAppConfig ( $stateProvider, $urlRouterProvider ) {

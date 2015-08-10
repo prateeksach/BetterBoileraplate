@@ -1,0 +1,2 @@
+angular.module("templates.module", []).run(["$templateCache", function($templateCache) {$templateCache.put("templates/app.tpl.html","<div ui-view=\"app-content\"></div>");
+$templateCache.put("templates/home.tpl.html","");}]);

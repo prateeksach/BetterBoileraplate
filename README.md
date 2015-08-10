@@ -18,9 +18,16 @@ $ cd BetterBoilerplate
 $ sudo npm -g install grunt-cli bower
 $ npm install
 $ bower install
-$ grunt watch
 ```
 
-Finally, open `file:///path/to/BetterBoilerplate/build/index.html` in your browser.
+Development
+-----------------
+```sh
+$ npm start
+```
 
-Happy hacking!
+Production
+-----------------
+```sh
+$ npm run build
+```

@@ -1,6 +1,8 @@
 *.sw*
 *~
-build/
-release/
+src/css/
+src/index.html
+src/vendor
 node_modules/
-bower/
+.DS_Store
+*/**/.DS_Store
