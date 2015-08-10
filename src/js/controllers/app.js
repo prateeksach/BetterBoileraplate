@@ -13,8 +13,8 @@ angular.module( 'betterBP.controllers.app', [
 
   $rootScope.resetVariables();
 
-  // Check if a user is logged in and update it
-  if(validateUser()) {
+  // Check if a user is logged in and remember it on run time
+  if(Parse.User.current()) {
     $rootScope.currentUser = Parse.User.current();
   }
   
@@ -26,14 +26,8 @@ angular.module( 'betterBP.controllers.app', [
 
   // Update page title on route change
   $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
-    if(toState.data.pageTitle == "Michigan Admin") {
-      $rootScope.hideSaveSwitch = true;
-    } else {
-      $rootScope.hideSaveSwitch = false;
-    }
-    
     if(angular.isDefined(toState.data.pageTitle)) {
-      $rootScope.pageTitle = toState.data.pageTitle + ' | ScheduleMe';
+      $rootScope.pageTitle = toState.data.pageTitle + ' | BetterBP';
       $rootScope.pageName = toState.data.pageTitle;
     }
   });

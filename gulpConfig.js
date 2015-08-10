@@ -19,9 +19,8 @@ module.exports = {
         less      : 'src/less/main.less',
         watchLess : 'src/less/**/*.less',
         templates : 'src/templates/**/*.tpl.html',
-        index     : 'src/index.tpl.html',
+        index     : 'src/index.html',
         js        : 'src/js/**/*.js',
-        bowerCss  : '',
         css       : 'main.css',
         assets    : 'src/assets/**/*'
     },

@@ -35,7 +35,7 @@ module.exports = function (gulp, config, $, isProd) {
     // conbines all less files as well as bower css files
     gulp.task('dist:less', function() {
 
-        return gulp.src([config.files.less, config.files.bowerCss])
+        return gulp.src([config.files.less])
             .pipe($.less().on('error', $.util.log))
             .pipe($.autoprefixer('last 10 versions', 'ie 9'))
 

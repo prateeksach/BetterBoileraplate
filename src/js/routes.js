@@ -3,22 +3,11 @@ angular.module( 'betterBP.routes', [
 ])
 
 .config( function myAppConfig ( $stateProvider, $urlRouterProvider ) {
-  // Universal route for main content
-  $stateProvider.state( 'app', {
-    url: '',
-    abstract: 'true',
-    views: {
-      "app": {
-        templateUrl: 'templates/app.tpl.html'
-      }
-    }
-  });
-
   // All Routes
-  $stateProvider.state( 'app.home', {
+  $stateProvider.state( 'home', {
     url: '/home',
     views: {
-      "app-content": {
+      "app": {
         controller: 'HomeCtrl',
         templateUrl: 'templates/home.tpl.html'
       }

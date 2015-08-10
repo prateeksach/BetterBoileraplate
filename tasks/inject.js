@@ -5,10 +5,9 @@ var mainBowerFiles = require('main-bower-files');
 module.exports  = function (gulp, config, $, isProd) {
 
     gulp.task('inject', ['templatecache', 'less'], function () {
-        var bowerFiles, bowerCssFiles, appFiles, appCssFiles, dest;
+        var bowerFiles, appFiles, appCssFiles, dest;
         var env = isProd ? config.env.prod : config.env.dev;
 
-        bowerCssFiles = gulp.src(config.files.bowerCss);
         bowerFiles    = gulp.src(mainBowerFiles({env: env, paths: {
             bowerDirectory: config.bower.directory,
             bowerrc: config.bower.bowerrc,
@@ -20,7 +19,6 @@ module.exports  = function (gulp, config, $, isProd) {
 
         return gulp.src(config.files.index)
             .pipe($.inject(bowerFiles, {relative: true, name: 'bower'}))
-            .pipe($.inject(bowerCssFiles, {relative: true, name: 'bower'}))
             .pipe($.inject(appFiles, {relative: true, name: 'app'}))
             .pipe($.inject(appCssFiles, {relative: true, name: 'app'}))
             .pipe($.rename({basename: 'index'}))
