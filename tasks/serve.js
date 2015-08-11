@@ -1,5 +1,5 @@
 module.exports = function (gulp, config, $, isProd, browserSync) {
-    gulp.task('serve', ['templatecache', 'inject', 'less'], function () {
+    gulp.task('serve', ['templatecache', 'inject', 'sass'], function () {
         browserSync.init({
             server: {
                 baseDir: config.dirs.src

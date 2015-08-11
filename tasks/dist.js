@@ -30,11 +30,11 @@ module.exports = function (gulp, config, $, isProd) {
             .pipe(gulp.dest(config.dist.dirs.assets));
     });
 
-    // conbines all less files as well as bower css files
-    gulp.task('dist:less', function() {
+    // conbines all sass files as well as bower css files
+    gulp.task('dist:sass', function() {
 
-        return gulp.src([config.files.less])
-            .pipe($.less().on('error', $.util.log))
+        return gulp.src([config.files.sass])
+            .pipe($.sass().on('error', $.util.log))
             .pipe($.autoprefixer('last 10 versions', 'ie 9'))
 
             .pipe($.concat('main.css'))
@@ -51,7 +51,7 @@ module.exports = function (gulp, config, $, isProd) {
     });
 
     // injects files into index.html
-    gulp.task('dist:inject', ['dist:less', 'dist:vendor', 'dist:js', 'dist:index'], function () {
+    gulp.task('dist:inject', ['dist:sass', 'dist:vendor', 'dist:js', 'dist:index'], function () {
         var bowerFile, appFile, appCssFile;
         var env = isProd ? config.env.prod : config.env.dev;
 

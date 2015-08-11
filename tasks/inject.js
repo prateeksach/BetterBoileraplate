@@ -1,7 +1,7 @@
 var mainBowerFiles = require('main-bower-files');
 
 module.exports  = function (gulp, config, $, isProd) {
-    gulp.task('inject', ['templatecache', 'less'], function () {
+    gulp.task('inject', ['templatecache', 'sass'], function () {
         var bowerFiles, appFiles, appCssFiles, dest;
         var env = isProd ? config.env.prod : config.env.dev;
 
