@@ -3,6 +3,7 @@
 src/css/
 src/index.html
 src/vendor
+build/
 node_modules/
 .DS_Store
 */**/.DS_Store
