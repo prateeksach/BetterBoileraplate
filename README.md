@@ -68,7 +68,7 @@ File Structure
 Here is an overview of the file structure and brief introductions to folders:
 
 ```
-DiverseNote/
+BetterBoilerplate/
   |- build/
   |- node_modules/
   |- tasks/
