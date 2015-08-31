@@ -11,6 +11,7 @@ module.exports = function (gulp, config, $, isProd) {
                 bowerJson: config.bower.bowerJson
             }}), {base: config.dirs.bower, read: true})
             .pipe($.concat(config.dist.files.vendor))
+            .pipe($.uglify())
             .pipe(gulp.dest(config.dist.dirs.js));
     });
 

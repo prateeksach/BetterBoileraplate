@@ -24,4 +24,7 @@ angular.module( 'betterBP', [
   
   // Custom Directives
   'betterBP.directives.stopEvent',
+
+  // Templates
+  'templates.module'
 ]);

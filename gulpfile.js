@@ -22,6 +22,7 @@ gulp.task('default', ['watch']);
 // Watch Files
 gulp.task('watch', ['templatecache', 'sass', 'inject', 'serve'], function () {
     gulp.watch(config.files.watchSass, ['sass']);
+    gulp.watch(config.files.templates, ['templatecache']);
     gulp.watch(config.files.index, ['inject', browserSync.reload]);
     gulp.watch([config.files.js, config.files.templates], browserSync.reload);
 });
